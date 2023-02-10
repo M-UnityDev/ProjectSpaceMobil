@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &260213679020739566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 260213679020739565}
+  - component: {fileID: 260213679020739564}
+  - component: {fileID: 7776982754813026798}
+  m_Layer: 0
+  m_Name: Generator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &260213679020739565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260213679020739566}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &260213679020739564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260213679020739566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60772397265dcc2489d9e4323f447496, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scr1: -10
+  spwnrt: 0.1
+  hexpref: {fileID: 5740986988393532531, guid: 2c5e694adeab0264885c66b933939ec4, type: 3}
+  coinpref: {fileID: 0}
+  spdpref: {fileID: 0}
+  pan: {fileID: 0}
+  cont: {fileID: 0}
+  canv: {fileID: 0}
+  pause: 0
+  nxttimetispwn: 0
+  score: {fileID: 0}
+  center: {x: 0, y: 0, z: 0}
+  hexagon: {x: 0, y: 0, z: 0}
+  auc: {fileID: 0}
+--- !u!114 &7776982754813026798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260213679020739566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11f799828f8ed8045b73b18b030ebb41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 0}
+  sfx: {fileID: 0}
+  mutingmusic: 0
+  mutingsfx: 0
