@@ -8,6 +8,7 @@ TagManager:
   - hexagon
   - Shield
   - Shieldprev
+  - anim
   layers:
   - Default
   - TransparentFX

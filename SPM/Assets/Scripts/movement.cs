@@ -36,7 +36,7 @@ public class movement : MonoBehaviour
         if (coins < 0)
         { 
             coins = 0;
-            cointxt.text = "Coins: " + coins;
+            cointxt.text = coins.ToString();
         }
     }
     private void OnTriggerEnter2D(Collider2D collider)
@@ -46,7 +46,7 @@ public class movement : MonoBehaviour
             Destroy(collider.gameObject);
             gen.GetComponent<AudioSource>().PlayOneShot(coinsnd);
             coins += 1;
-            cointxt.text = "Coins: " + coins;
+            cointxt.text = coins.ToString();
             Debug.Log("coin");
         }
         else if (collider.gameObject.tag == "Shield" && invis == false)

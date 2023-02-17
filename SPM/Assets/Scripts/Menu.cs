@@ -2,10 +2,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
-    public GameObject gen;
-    public AudioClip aus;
-    void Awake()
-    {}
+    [SerializeField] private GameObject gen;
+    [SerializeField] private AudioClip aus;
     public void strgame()
     {
         gen.GetComponent<AudioSource>().PlayOneShot(aus);

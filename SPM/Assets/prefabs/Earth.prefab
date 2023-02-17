@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2020803487954290977}
   - component: {fileID: 2020803487954290978}
   - component: {fileID: 2020803487954290979}
-  - component: {fileID: 2020803487954290980}
   - component: {fileID: 2020803487954290981}
+  - component: {fileID: 6958696408658184775}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Player
@@ -109,7 +109,39 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &2020803487954290980
+--- !u!114 &2020803487954290981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020803487954290982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf3f69e847d7ecd429e66b703fc31f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vcam: {fileID: 0}
+  noise: {fileID: 0}
+  speed: 300
+  movent: 0
+  coins: 0
+  mycoin: 0
+  cointxt: {fileID: 0}
+  collider: {fileID: 5740986988393532535, guid: 2c5e694adeab0264885c66b933939ec4, type: 3}
+  gamovr: {fileID: 0}
+  exp: {fileID: 139366, guid: b185c1a9cf067374586d095111b15bd1, type: 3}
+  gen: {fileID: 0}
+  canv: {fileID: 0}
+  gameover: {fileID: 8300000, guid: 9049807bdfec814438b2d4322dc1b146, type: 3}
+  dead: {fileID: 8300000, guid: 7c42e761de4de7d4bb7aa2c9e438a174, type: 3}
+  coinsnd: {fileID: 0}
+  invisnd: {fileID: 0}
+  pan: {fileID: 0}
+  lbtn: {fileID: 0}
+  sh: {fileID: 0}
+  invis: 0
+--- !u!58 &6958696408658184775
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,30 +156,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 4.5
---- !u!114 &2020803487954290981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2020803487954290982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf3f69e847d7ecd429e66b703fc31f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 300
-  movent: 0
-  coins: 0
-  cointxt: {fileID: 0}
-  collider: {fileID: 5740986988393532535, guid: 2c5e694adeab0264885c66b933939ec4, type: 3}
-  gamovr: {fileID: 0}
-  exp: {fileID: 139366, guid: b185c1a9cf067374586d095111b15bd1, type: 3}
-  gen: {fileID: 0}
-  canv: {fileID: 0}
-  gameover: {fileID: 8300000, guid: 9049807bdfec814438b2d4322dc1b146, type: 3}
-  dead: {fileID: 8300000, guid: 7c42e761de4de7d4bb7aa2c9e438a174, type: 3}
+  m_Radius: 2.56
 --- !u!1 &2020803488374917756
 GameObject:
   m_ObjectHideFlags: 0

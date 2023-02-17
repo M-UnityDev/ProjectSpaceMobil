@@ -7,7 +7,10 @@ public class OptimizeCollectables : MonoBehaviour
         StartCoroutine(disapear());
     }
     void Update()
-    {transform.Rotate(new Vector3(0, 45, 0) * Time.deltaTime);}
+    {
+        if (gameObject.tag == "Coin" || gameObject.tag == "Shield")
+        {transform.Rotate(new Vector3(0, 45, 0) * Time.deltaTime);}
+    }
     IEnumerator disapear()
     {
         if (gameObject.tag == "Coin" || gameObject.tag == "Shield")

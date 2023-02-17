@@ -4,7 +4,7 @@ using System.Collections;
 using TMPro;
 public class Generator : MonoBehaviour
 {
-    public float scr1;
+    public float scr;
     public float spwnrt = 2f;
     public movement earth;
     public int mycoin;
@@ -40,8 +40,8 @@ public class Generator : MonoBehaviour
             Vector3 hexpos = center + new Vector3(0, 0, 750);
             Instantiate(hexpref, hexpos, Quaternion.identity);
             nxttimetispwn = Time.time + 1f * spwnrt;
-            scr1 += 1;
-            score.text = "Score: " + scr1;
+            scr += 1;
+            score.text = scr.ToString();
         }
     }
     public void extbtn()
