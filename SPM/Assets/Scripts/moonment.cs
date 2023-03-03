@@ -33,7 +33,7 @@ public class moonment : MonoBehaviour
         Instantiate(exp, gameObject.transform);
         speed = 0f;
         earth.coins = earth.coins - 10;
-        cointxt.text = "Coins: " + earth.coins;
+        cointxt.text = earth.coins.ToString();
         Debug.Log("-10");
         gen.GetComponent<AudioSource>().PlayOneShot(dead);
         vcam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = 1;
@@ -42,16 +42,7 @@ public class moonment : MonoBehaviour
         yield return new WaitForSeconds(0.6f);
         Destroy(gameObject);
     }
-    public void up()
-    {
-        movent = 1;
-    }
-    public void down()
-    {
-        movent = -1;
-    }
-    public void movnclr()
-    {
-        movent = 0;
-    }
+    public void up() => movent = 1;
+    public void down() => movent = -1;
+    public void movnclr() => movent = 0;
 }

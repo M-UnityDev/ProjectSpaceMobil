@@ -1,7 +1,7 @@
-using UnityEngine;
 using Cinemachine;
-using TMPro;
 using System.Collections;
+using TMPro;
+using UnityEngine;
 public class movement : MonoBehaviour
 {
     [SerializeField] private CinemachineVirtualCamera vcam;
@@ -11,7 +11,7 @@ public class movement : MonoBehaviour
     public int coins;
     [SerializeField] private int mycoin;
     [SerializeField] private TMP_Text cointxt;
-    [SerializeField] private new Collider2D collider;
+    [SerializeField] private Collider2D collider;
     [SerializeField] private GameObject gamovr;
     [SerializeField] private GameObject exp;
     [SerializeField] private GameObject gen;
@@ -34,10 +34,11 @@ public class movement : MonoBehaviour
         transform.RotateAround(Vector3.zero, Vector3.forward, movent * speed * Time.deltaTime);
         transform.Rotate(new Vector3(0, 0, 45) * Time.deltaTime);
         if (coins < 0)
-        { 
+        {
             coins = 0;
             cointxt.text = coins.ToString();
         }
+
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -55,7 +56,7 @@ public class movement : MonoBehaviour
             StartCoroutine(sped());
         }
         else if (collider.gameObject.tag == "Shield" && invis == true)
-        {}
+        { }
         else if (collider.gameObject.tag == "hexagon" && invis == true)
         {
             Destroy(collider.gameObject);
@@ -90,16 +91,7 @@ public class movement : MonoBehaviour
         yield return new WaitForSeconds(30f);
         invis = false;
     }
-    public void up()
-    {
-        movent = 1;
-    }
-    public void down()
-    {
-        movent = -1;
-    }
-    public void movnclr()
-    {
-        movent = 0;
-    }
+    public void up() => movent = 1;
+    public void down() => movent = -1;
+    public void movnclr() => movent = 0;
 }

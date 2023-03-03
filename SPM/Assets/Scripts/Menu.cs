@@ -32,6 +32,16 @@ public class Menu : MonoBehaviour
     public void levelbtn()
     {
         gen.GetComponent<AudioSource>().PlayOneShot(aus);
-        SceneManager.LoadScene("levels");
+        SceneManager.LoadScene("Planets");
+    }
+    public void modebtn()
+    {
+        gen.GetComponent<AudioSource>().PlayOneShot(aus);
+        SceneManager.LoadScene("Levels");
+    }
+    public void onebtn()
+    {
+        gen.GetComponent<AudioSource>().PlayOneShot(aus);
+        SceneManager.LoadScene("GameWithOneButton");
     }
 }

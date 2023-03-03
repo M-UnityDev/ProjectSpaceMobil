@@ -1,7 +1,7 @@
-using UnityEngine;
-using UnityEngine.SceneManagement;
 using System.Collections;
 using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 public class Generator : MonoBehaviour
 {
     public float scr;
